@@ -25,6 +25,6 @@ require __DIR__.'/auth.php';
 
 Route::get('admin/dashboard', function () {
     return view('admin.dashboard');
-})->middleware(['auth'])->name('admin.dashboard');
+})->middleware(['auth:admin'])->name('admin.dashboard');
 
 require __DIR__.'/Adminauth.php';
